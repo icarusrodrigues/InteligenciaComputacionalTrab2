@@ -7,6 +7,7 @@
 clear; clc; close all
 
 pkg load image
+pkg load statistics
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Fase 1 -- Carrega imagens disponiveis
@@ -54,7 +55,7 @@ end
 
 %%%%%%%% APLICACAO DE PCA (PCACOV) %%%%%%%%%%%
 %[V L VEi]=pcacov(cov(X'));
-%q=25; Vq=V(:,1:q); Qq=Vq'; X=Qq*X;
+%q=400; Vq=V(:,1:q); Qq=Vq'; X=Qq*X;
 %VEq=cumsum(VEi); figure; plot(VEq,'r-','linewidth',3);
 %xlabel('Autovalor');
 %ylabel('Variancia explicada acumulada');
